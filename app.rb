@@ -20,5 +20,6 @@ require "sinatra/reloader" if development?
     end
 
     get '/cat' do
-       erb(:index)
+        @name = ['Amigo', 'Almond', 'Misty'].sample
+        erb(:index)
     end
