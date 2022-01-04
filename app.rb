@@ -18,3 +18,7 @@ require "sinatra/reloader" if development?
     get '/project' do
         'This is a first web app project using sinatra!'
     end
+
+    get '/cat' do
+        '<img src="https://i.imgur.com/jFaSxym.png">'
+    end
