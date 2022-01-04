@@ -20,5 +20,11 @@ require "sinatra/reloader" if development?
     end
 
     get '/cat' do
-        '<img src="https://i.imgur.com/jFaSxym.png">'
+        '<div style="border: 3px solid #000">
+            <img src="https://i.imgur.com/jFaSxym.png">
+        </div>'
     end
+
+
+
+    
