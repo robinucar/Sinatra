@@ -19,7 +19,13 @@ require "sinatra/reloader" if development?
         'This is a first web app project using sinatra!'
     end
 
-    get '/cat' do
+    get '/random-cat' do
         @name = ['Amigo', 'Almond', 'Misty'].sample
+        erb(:index)
+    end
+
+    get '/named-cat' do
+        p params
+        @name = params[:name]
         erb(:index)
     end
