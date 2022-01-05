@@ -24,8 +24,15 @@ require "sinatra/reloader" if development?
         erb(:index)
     end
 
-    get '/named-cat' do
+    get '/naming-cat' do
+        p params
+        erb(:cat_form)
+    end
+
+    post '/named-cat' do
         p params
         @name = params[:name]
         erb(:index)
     end
+
+    
